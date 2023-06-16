@@ -20,9 +20,9 @@ function searchFunc() {
                 if (keywords.indexOf(searchPhrase) >= 0 || keypersons.indexOf(searchPhrase) >= 0) {
                     entries.innerHTML += `<article class="entry"><h2 class="entry-title">${post[1]}</h2><div class="entry-meta"><ul><li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a>${post[0]}</a></li></ul></div><div class="entry-content"><p>${post[2].slice(0, 200) + "..."}</p><button class="btn btn-blue" onclick="showPost('${post[7]}')">مطالعه‌ی بیشتر</button></div></article>`;
                     count += 1;
-                    countResult.innerText = count + " مورد یافت شد.";
                 }
             });
+            countResult.innerText = count + " مورد یافت شد.";
         })
         .catch((e) => console.error(e));
 }
