@@ -22,9 +22,9 @@ function searchFunc() {
                     count += 1;
                 }
             });
-            countResult.innerText = count + " مورد یافت شد.";
         })
         .catch((e) => console.error(e));
+    countResult.innerText = count + " مورد یافت شد.";
 }
 
 // function searchFunc() {
